@@ -17,11 +17,35 @@
   </properties>
 
   <dependencies>
+
+    <!-- (2) GeoTools -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <groupId>org.geotools</groupId>
+      <artifactId>gt-shapefile</artifactId>
+      <version>27.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.geotools</groupId>
+      <artifactId>gt-epsg-hsql</artifactId>
+      <version>27.2</version>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
+
+  <!-- (1) Repository -->
+  <repositories>
+    <repository>
+      <id>osgeo</id>
+      <name>Open Source Geospatial Foundation Repository</name>
+      <url>https://repo.osgeo.org/repository/release/</url>
+    </repository>
+    <repository>
+      <id>opengeo</id>
+      <name>OpenGeo Maven Repository</name>
+      <url>https://repo.osgeo.org/repository/release/</url>
+    </repository>
+  </repositories>
+
 </project>
